@@ -5,3 +5,4 @@ vim.keymap.set("n", "<leader>t", ":botright 8sp|term<CR>", {desc = 'Abre una ter
 vim.keymap.set("n", "<leader>+", "2<C-w>+", {desc = 'Aumenta el tamaño de la ventana en split'}) 
 vim.keymap.set("n", "<leader>-", "2<C-w>-", {desc = 'Disminuye el tamaño de la ventana split'})
 vim.keymap.set("n", "<leader>w", "<C-w>w", {desc = 'Cambia entre ventanas split'})
+vim.keymap.set("n", "<leader>i", "gg=G", {desc = 'Indentacion de todo el archivo'})
