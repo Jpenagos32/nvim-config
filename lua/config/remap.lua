@@ -6,3 +6,5 @@ vim.keymap.set("n", "<leader>+", "2<C-w>+", {desc = 'Aumenta el tamaño de la ve
 vim.keymap.set("n", "<leader>-", "2<C-w>-", {desc = 'Disminuye el tamaño de la ventana split'})
 vim.keymap.set("n", "<leader>w", "<C-w>w", {desc = 'Cambia entre ventanas split'})
 vim.keymap.set("n", "<leader>i", "gg=G", {desc = 'Indentacion de todo el archivo'})
+vim.keymap.set("n", "<leader>pp", "\"+p:%s/\\r//g<CR>", {desc = 'Pega de la papelera'})
+vim.keymap.set("v", "<leader>y", "\"+y", {desc = 'Copia a la papelera'})

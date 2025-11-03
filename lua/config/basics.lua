@@ -3,3 +3,8 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.softtabstop = 4
 vim.opt.number = true
+
+-- Habilita texto informativo
+vim.diagnostic.config({
+    virtual_text = true
+})
