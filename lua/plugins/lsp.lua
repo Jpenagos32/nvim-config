@@ -7,7 +7,8 @@ return {
             "html",
             "ts_ls",
             "cssls",
-            "css_variables"
+            "css_variables",
+            "jsonls"
         })
     end
 }
