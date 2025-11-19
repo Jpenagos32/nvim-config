@@ -1,82 +1,107 @@
 {
-	"etiquetas_php": {
-		"prefix": "open",
-		"body": "<?php \n$0"
-	},
-	"php con impresion":{
-		"prefix": "??",
-		"body": "<?=?>"
-	},
-	"condicional Else": {
-		"prefix": "els",
-		"body": [
-			"else{",
-			"\t$0",
-			"}"
-		]
-	},
-	"mejorar formato var_dump": {
-		"prefix": "pre",
-		"body": [
-			"echo \"<pre>\";",
-			"var_dump($0);",
-			"echo \"</pre>\";"
-		]
-	},
-	"salto de linea": {
-		"prefix": "ebr",
-		"body": "echo '<br/>';$0"
-	},
-	"echo a un h1": {
-		"prefix": "eh1",
-		"body": "echo '<h1>$0</h1>';"
-	},
-	"echo a un <hr>": {
-		"prefix": "ehr",
-		"body": "echo '<hr>';"
-	},
-	"echo a un <li>": {
-		"prefix": "eli",
-		"body": [
-			"echo '<li>';",
-			"echo '${1:escribir}';",
-			"echo '</li>';"
-		]
-	},
-	"Declarar modo estricto": {
-		"prefix": "strict",
-		"body": "declare( strict_types = 1 );",
-		"description": "Must be the first thing in document after opening php labels"
-	},
-	"Server Request Method Shortcut": {
-		"prefix": "srm",
-		"body": "\\$_SERVER['REQUEST_METHOD']",
-		"description": "Shortcut for $_SERVER['REQUEST_METHOD']"
-	},
-	"Public static function shortcut": {
-		"prefix": "psf",
-		"body": "public static function ${1:fnName} () {\n\t$0\n}"
-	},
-	"Create documentation": {
-		"prefix": "doc",
-		"body": [
-			"/**",
-			" * ${1:Title}",
-			" *",
-			" * ${2:Description}",
-			" *",
-			" * @param ${3:Type} \\$${4:var} ${5:Description}",
-			" * @return ${6:type}",
-			" * @author Julian Penagos <jpenagosdev@gmail.com>",
-			" **/"
-		]
-	},
-	"Condicional para php con html": {
-		"prefix": "phpif",
-		"body": [
-			"<?php if($1): ?>",
-			"\t$0",
-			"<?php endif?>"
-		]
-	}
+    "etiquetas_php": {
+        "prefix": "open",
+        "body": "<?php \n$0"
+    },
+    "php con impresion": {
+        "prefix": "??",
+        "body": "<?=$1?>"
+    },
+    "condicional Else": {
+        "prefix": "els",
+        "body": [
+            "else{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "mejorar formato var_dump": {
+        "prefix": "pre",
+        "body": [
+            "echo \"<pre>\";",
+            "var_dump($0);",
+            "echo \"</pre>\";"
+        ]
+    },
+    "salto de linea": {
+        "prefix": "ebr",
+        "body": "echo '<br/>';$0"
+    },
+    "echo a un h1": {
+        "prefix": "eh1",
+        "body": "echo '<h1>$0</h1>';"
+    },
+    "echo a un <hr>": {
+        "prefix": "ehr",
+        "body": "echo '<hr>';"
+    },
+    "echo a un <li>": {
+        "prefix": "eli",
+        "body": [
+            "echo '<li>';",
+            "echo '${1:escribir}';",
+            "echo '</li>';"
+        ]
+    },
+    "Declarar modo estricto": {
+        "prefix": "strict",
+        "body": "declare( strict_types = 1 );",
+        "description": "Must be the first thing in document after opening php labels"
+    },
+    "Server Request Method Shortcut": {
+        "prefix": "srm",
+        "body": "\\$_SERVER['REQUEST_METHOD']",
+        "description": "Shortcut for $_SERVER['REQUEST_METHOD']"
+    },
+    "Public static function shortcut": {
+        "prefix": "psf",
+        "body": "public static function ${1:fnName} () {\n\t$0\n}"
+    },
+    "Create documentation": {
+        "prefix": "doc",
+        "body": [
+            "/**",
+            " * ${1:Title}",
+            " *",
+            " * ${2:Description}",
+            " *",
+            " * @param ${3:Type} \\$${4:var} ${5:Description}",
+            " * @return ${6:type}",
+            " * @author Julian Penagos <jpenagosdev@gmail.com>",
+            " **/"
+        ]
+    },
+    "Create small phpdoc": {
+        "prefix": "sdoc",
+        "body": [
+            "/**",
+            "* $1",
+            "*/"
+        ]
+    },
+    "Condicional para php con html": {
+        "prefix": "phpif",
+        "body": [
+            "<?php if($1): ?>",
+            "\t$0",
+            "<?php endif?>"
+        ]
+    },
+    "inserta this": {
+        "prefix": "this",
+        "body": "\\$this->$0"
+    },
+    "public function": {
+        "prefix": "pf",
+        "body": [
+            "public function ${1:functionName}($2): ${3:Type} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+    "Testdox generator": {
+        "prefix": "tdox",
+        "body": "#[TestDox('$1')]",
+        "description": "Atajo para generar Testdox para testing"
+    }
 }
