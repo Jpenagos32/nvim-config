@@ -13,11 +13,16 @@ vim.keymap.set("n", "<leader>i", "gg=G", { desc = 'Indentacion de todo el archiv
 vim.keymap.set("n", "<leader>rg", ":%s/",
     {
         desc =
-        'Reemplaza todas las ocurrencias de la palabra dentro del archivo (usar el flag "/c" al final para preguntar)'
+        'Reemplaza todas las ocurrencias de la palabra dentro del archivo (usar el flag /c al final para preguntar)'
     }
 )
 
-vim.keymap.set("n", "<leader>rw", ":s/", { desc = 'Reemplaza la palabra bajo el cursor' })
+vim.keymap.set(
+    "n",
+    "<leader>rw",
+    ":s/",
+    { desc = 'Reemplaza la palabra bajo el cursor (usar flag /g para reemplazar toda la linea)' }
+)
 
 -- Ventanas
 vim.keymap.set("n", "<leader>ws", "<C-w>s", { desc = 'Crea una nueva ventana horizontal' })
