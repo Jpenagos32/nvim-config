@@ -103,5 +103,10 @@
         "prefix": "tdox",
         "body": "#[TestDox('$1')]",
         "description": "Atajo para generar Testdox para testing"
+    },
+    "Array key value": {
+        "prefix": "kv",
+        "body": "'${1:key}' => ${2:$value}",
+        "description": "Generates $key => $value for assoc array"
     }
 }
