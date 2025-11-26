@@ -1,7 +1,44 @@
+--return {
+--    "neovim/nvim-lspconfig",
+--    config = function()
+--        vim.lsp.enable({
+--            "lua_ls",
+--            "phpactor",
+--            "html",
+--            "ts_ls",
+--            "cssls",
+--            "css_variables",
+--            "jsonls",
+--            "emmet_language_server"
+--        })
+--
+--        vim.lsp.config('emmet_language_server', {
+--            filetypes = {
+--                "php",
+--                "astro",
+--                "css",
+--                "eruby",
+--                "html",
+--                "htmlangular",
+--                "htmldjango",
+--                "javascriptreact",
+--                "less",
+--                "pug",
+--                "sass",
+--                "scss",
+--                "svelte",
+--                "templ",
+--                "typescriptreact",
+--                "vue"
+--            }
+--        })
+--    end
+--}
+--
 return {
-    "neovim/nvim-lspconfig",
-    config = function()
-        vim.lsp.enable({
+    "mason-org/mason-lspconfig.nvim",
+    opts = {
+        ensure_installed = {
             "lua_ls",
             "phpactor",
             "html",
@@ -9,28 +46,48 @@ return {
             "cssls",
             "css_variables",
             "jsonls",
-            "emmet_language_server"
-        })
+            "emmet_language_server",
+        },
+        automatic_enable = true
+    },
 
-        vim.lsp.config('emmet_language_server', {
-            filetypes = {
-                "php",
-                "astro",
-                "css",
-                "eruby",
-                "html",
-                "htmlangular",
-                "htmldjango",
-                "javascriptreact",
-                "less",
-                "pug",
-                "sass",
-                "scss",
-                "svelte",
-                "templ",
-                "typescriptreact",
-                "vue"
+    dependencies = {
+        {
+            "mason-org/mason.nvim",
+            opts = {
+                ui = {
+                    icons = {
+                        package_installed = "✓",
+                        package_pending = "➜",
+                        package_uninstalled = "✗"
+                    }
+                }
             }
-        })
-    end
+        },
+        {
+            "neovim/nvim-lspconfig",
+            config = function()
+                vim.lsp.config('emmet_language_server', {
+                    filetypes = {
+                        "php",
+                        "astro",
+                        "css",
+                        "eruby",
+                        "html",
+                        "htmlangular",
+                        "htmldjango",
+                        "javascriptreact",
+                        "less",
+                        "pug",
+                        "sass",
+                        "scss",
+                        "svelte",
+                        "templ",
+                        "typescriptreact",
+                        "vue"
+                    }
+                })
+            end
+        },
+    }
 }
