@@ -40,7 +40,8 @@ return {
     opts = {
         ensure_installed = {
             "lua_ls",
-            "phpactor",
+            --"phpactor",
+            "intelephense",
             "html",
             "ts_ls",
             "cssls",
@@ -85,6 +86,16 @@ return {
                         "templ",
                         "typescriptreact",
                         "vue"
+                    }
+                })
+
+                vim.lsp.config('lua_ls', {
+                    settings = {
+                        Lua = {
+                            diagnostics = {
+                                disable = { "undefined-global" }
+                            }
+                        }
                     }
                 })
             end

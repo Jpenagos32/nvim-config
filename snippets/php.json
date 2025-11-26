@@ -5,7 +5,7 @@
     },
     "php con impresion": {
         "prefix": "??",
-        "body": "<?=$1?>"
+        "body": "<?= $1 ?>"
     },
     "condicional Else": {
         "prefix": "els",

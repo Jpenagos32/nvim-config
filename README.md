@@ -6,5 +6,6 @@ En el caso de Ubuntu, en caso de que no exista, se debe instalar
 ```bash
 sudo apt install xclip
 ```
+==
 
 - Tambien es necesario instalar con Mason el formatter para PHP `php-cs-fixer`
