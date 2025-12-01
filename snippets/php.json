@@ -108,5 +108,13 @@
         "prefix": "kv",
         "body": "'${1:key}' => ${2:$value}",
         "description": "Generates $key => $value for assoc array"
+    },
+    "Creates a function": {
+        "prefix": "function",
+        "body": [
+            "function ${1:fnName}($2): ${3:ReturnType} {",
+            "\t$4",
+            "}"
+        ]
     }
 }
