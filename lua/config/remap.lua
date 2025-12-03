@@ -25,8 +25,8 @@ vim.keymap.set(
 )
 
 -- Ventanas
-vim.keymap.set("n", "<leader>ws", "<C-w>s", { desc = 'Crea una nueva ventana horizontal' })
-vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = 'Crea una nueva ventana vertical' })
+vim.keymap.set("n", "<leader>ws", "<C-w>s", { desc = 'Divide la ventana horizontalmente' })
+vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = 'Divide la ventana verticalmente' })
 vim.keymap.set("n", "<leader>ww", "<C-w>w", { desc = 'Cambia entre ventanas split' })
 vim.keymap.set("n", "<leader>wj", "<C-w>j", { desc = 'Cambia a la ventana inferior.' })
 vim.keymap.set("n", "<leader>wk", "<C-w>k", { desc = 'Cambia a la ventana superior' })
