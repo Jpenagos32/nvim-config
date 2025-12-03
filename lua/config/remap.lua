@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Abre el explorador' })
 
 -- Archivos
-vim.keymap.set("n", "<leader>ft", ":/", { desc = 'Busca palabras dentro del archivo' })
+vim.keymap.set("n", "<leader>ft", "/", { desc = 'Busca palabras dentro del archivo' })
 vim.keymap.set("n", "<A-S-k>", ":m -2<CR>", { desc = 'Sube la linea actual' })
 vim.keymap.set("n", "<A-S-j>", ":m +1<CR>", { desc = 'Baja la linea actual' })
 vim.keymap.set("n", "<leader>i", "gg=G", { desc = 'Indentacion de todo el archivo' })
