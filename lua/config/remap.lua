@@ -39,5 +39,12 @@ vim.keymap.set("n", "<leader>t", ":botright 8sp|term<CR>", { desc = 'Abre una te
 vim.keymap.set("n", "<leader>+", "2<C-w>+", { desc = 'Aumenta el tamaño de la ventana en split' })
 vim.keymap.set("n", "<leader>-", "2<C-w>-", { desc = 'Disminuye el tamaño de la ventana split' })
 
+-- Pestañas
+vim.keymap.set("n", "<leader>pp", ":tabnew<CR>", { desc = 'Abre una nueva pestaña' })
+vim.keymap.set("n", "<leader>pc", ":tabclose<CR>", { desc = 'Cierra la pestaña actual' })
+vim.keymap.set("n", "<leader>po", ":tabonly<CR>", { desc = 'Cierra todas las pestañas excepto la actual' })
+vim.keymap.set("n", "<leader>ps", ":tabn<CR>", { desc = 'Cambia a la siguiente pestaña <gt>' })
+vim.keymap.set("n", "<leader>pa", ":tabp<CR>", { desc = 'Cambia a la anterior pestaña <gT>' })
+
 -- Terminal
 vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = 'Sale del modo terminal y vuelve al modo normal' })
