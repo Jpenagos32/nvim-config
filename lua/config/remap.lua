@@ -45,6 +45,7 @@ vim.keymap.set("n", "<leader>pc", ":tabclose<CR>", { desc = 'Cierra la pestaña 
 vim.keymap.set("n", "<leader>po", ":tabonly<CR>", { desc = 'Cierra todas las pestañas excepto la actual' })
 vim.keymap.set("n", "<leader>ps", ":tabn<CR>", { desc = 'Cambia a la siguiente pestaña <gt>' })
 vim.keymap.set("n", "<leader>pa", ":tabp<CR>", { desc = 'Cambia a la anterior pestaña <gT>' })
+vim.keymap.set("n", "<leader>pl", ":tabs<CR>", { desc = 'Lista todas las pestañas abiertas' })
 
 -- Terminal
 vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = 'Sale del modo terminal y vuelve al modo normal' })
