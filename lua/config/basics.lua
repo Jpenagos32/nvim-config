@@ -11,3 +11,4 @@ vim.opt.clipboard = "unnamedplus" -- sincroniza la papelera de neovim con la pap
 vim.diagnostic.config({
     virtual_text = true
 })
+vim.opt.termguicolors = true -- opcion para el correcto funcionamiento de bufferline

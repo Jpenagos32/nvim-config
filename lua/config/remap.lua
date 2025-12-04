@@ -39,13 +39,24 @@ vim.keymap.set("n", "<leader>t", ":botright 8sp|term<CR>", { desc = 'Abre una te
 vim.keymap.set("n", "<leader>+", "2<C-w>+", { desc = 'Aumenta el tamaño de la ventana en split' })
 vim.keymap.set("n", "<leader>-", "2<C-w>-", { desc = 'Disminuye el tamaño de la ventana split' })
 
--- Pestañas (buffers)
-vim.keymap.set("n", "<leader>bb", ":tabnew<CR>", { desc = 'Abre una nueva pestaña' })
-vim.keymap.set("n", "<leader>bc", ":tabclose<CR>", { desc = 'Cierra la pestaña actual' })
-vim.keymap.set("n", "<leader>bo", ":tabonly<CR>", { desc = 'Cierra todas las pestañas excepto la actual' })
-vim.keymap.set("n", "<leader>bn", ":tabn<CR>", { desc = 'Cambia a la siguiente pestaña <gt>' })
-vim.keymap.set("n", "<leader>bp", ":tabp<CR>", { desc = 'Cambia a la anterior pestaña <gT>' })
-vim.keymap.set("n", "<leader>bl", ":tabs<CR>", { desc = 'Lista todas las pestañas abiertas' })
+-- buffers
+vim.keymap.set("n", "gb", ":bn<CR>", {
+    desc = 'Cambia al buffer siguiente',
+    noremap = true,
+    silent = true
+})
+
+vim.keymap.set("n", "gB", ":bp<CR>", {
+    desc = 'Cambia al buffer anterior',
+    noremap = true,
+    silent = true
+})
+
+vim.keymap.set("n", "<leader>bd", ":bd<CR>", {
+    desc = 'Elimina el buffer actual',
+    noremap = true,
+    silent = true
+})
 
 -- Terminal
 vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = 'Sale del modo terminal y vuelve al modo normal' })
