@@ -49,7 +49,8 @@ return {
                         "svelte",
                         "templ",
                         "typescriptreact",
-                        "vue"
+                        "vue",
+                        "blade",
                     }
                 })
 
