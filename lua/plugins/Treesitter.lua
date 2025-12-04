@@ -13,6 +13,8 @@ return {
             "phpdoc",
             "html",
             "javascript",
+            "typescript",
+            "tsx",
             "lua",
             "css",
             "markdown",
