@@ -9,3 +9,7 @@ sudo apt install xclip
 ==
 
 - Tambien es necesario instalar con Mason el formatter para PHP `php-cs-fixer`
+
+- Snacks reemplaza los siguientes pluggins:
+    - telescope
+    ╴ indent_blankline.lua
