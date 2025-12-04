@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 -- Explorador
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Abre el explorador' })
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Abre el explorador' })
 
 -- Archivos
 vim.keymap.set("n", "<leader>ft", "/", { desc = 'Busca palabras dentro del archivo' })
