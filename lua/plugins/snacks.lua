@@ -11,7 +11,7 @@ return {
         explorer = {
             enabled = true,
         },
-        -- indent = { enabled = true },
+        indent = { enabled = true },
         --input = { enabled = true },
         picker = {
             enabled = true,
@@ -20,7 +20,7 @@ return {
                     hidden = true,
                     layout = {
                         layout = {
-                            position = "right"
+                            position = "right" -- Posicion del explorador a la derecha
                         }
                     },
                     auto_close = true, -- Cierra el explorador automaticamente
