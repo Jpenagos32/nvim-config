@@ -11,6 +11,7 @@ return {
             "css_variables",
             "jsonls",
             "emmet_language_server",
+            "laravel_ls"
         },
         automatic_enable = true
     },
