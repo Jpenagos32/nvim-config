@@ -11,13 +11,13 @@ return {
         explorer = {
             enabled = true,
         },
-        indent = { enabled = true },
+        indent = { enabled = true }, -- Habilita las lineas de indentado
         --input = { enabled = true },
         picker = {
             enabled = true,
             sources = {
                 explorer = {
-                    hidden = true,
+                    hidden = true, -- Muestra los archivos ocultos por defecto en el explorador
                     layout = {
                         layout = {
                             position = "right" -- Posicion del explorador a la derecha
