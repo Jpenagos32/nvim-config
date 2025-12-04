@@ -8,7 +8,7 @@ return {
 
         formatters_by_ft = {
             php = { 'php_cs_fixer' },
-            blade = { 'php_cs_fixer' },
+            blade = { 'blade-formatter' },
         },
 
         formatters = {
