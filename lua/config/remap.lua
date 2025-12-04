@@ -60,3 +60,34 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", {
 
 -- Terminal
 vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = 'Sale del modo terminal y vuelve al modo normal' })
+
+-- Code actions
+vim.keymap.set("n", "<leader>ca", "gra", {
+    desc = 'Muestra los code actions',
+    noremap = true
+})
+
+vim.keymap.set("n", "<leader>ci", "gri", {
+    desc = 'Muestra las implementaciones del símbolo bajo el cursor',
+    noremap = true
+})
+
+vim.keymap.set("n", "<leader>cn", "grn", {
+    desc = 'Renombra todas las referencias del simbolo bajo el cursor',
+    noremap = true
+})
+
+vim.keymap.set("n", "<leader>cr", "grr", {
+    desc = 'Muestra todas las referencias del símbolo bajo el cursor',
+    noremap = true
+})
+
+vim.keymap.set("n", "<leader>ct", "grt", {
+    desc = 'Salta a la definicion del tipo del símbolo bajo el cursor',
+    noremap = true
+})
+
+vim.keymap.set("n", "<leader>ct", "grt", {
+    desc = 'Salta a la definicion del tipo del símbolo bajo el cursor',
+    noremap = true
+})

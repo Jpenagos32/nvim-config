@@ -40,8 +40,8 @@ return {
     opts = {
         ensure_installed = {
             "lua_ls",
-            --"phpactor",
-            "intelephense",
+            "phpactor",
+            -- "intelephense",
             "html",
             "ts_ls",
             "cssls",
