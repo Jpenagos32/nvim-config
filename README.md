@@ -6,10 +6,16 @@ En el caso de Ubuntu, en caso de que no exista, se debe instalar
 ```bash
 sudo apt install xclip
 ```
-==
+---
 
 - Tambien es necesario instalar con Mason el formatter para PHP `php-cs-fixer`
 
+- Es necesario instalar `fd-find` para el correcto funcionamiento de `Snacks`
+
+```bash
+sudo apt install fd-find
+```
+
 - Snacks reemplaza los siguientes pluggins:
     - telescope
-    ╴ indent_blankline.lua
+    - indent_blankline.lua
