@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 -- Explorador
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Abre el explorador' })
+vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
 -- Archivos
 vim.keymap.set("n", "<leader>ft", "/", { desc = 'Busca palabras dentro del archivo' })
@@ -90,4 +91,10 @@ vim.keymap.set("n", "<leader>at", "grt", {
 vim.keymap.set("n", "<leader>at", "grt", {
     desc = 'Salta a la definicion del tipo del símbolo bajo el cursor',
     noremap = true
+})
+
+-- Markdown
+vim.keymap.set('n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {
+    desc = 'Inicia o detiene el m Markdown Preview',
+    silent = true
 })
