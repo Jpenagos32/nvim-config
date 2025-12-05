@@ -72,5 +72,31 @@ return {
             }
         }
 
-    }
+    },
+
+    -- Usamos 'config' para agregar el parser personalizado antes de llamar a setup.
+    config = function(_, opts)
+        -- 1. Definición del parser personalizado 'blade'
+        local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+        parser_config.blade = {
+            install_info = {
+                url = "https://github.com/EmranMR/tree-sitter-blade",
+                files = { "src/parser.c" },
+                branch = "main",
+            },
+            filetype = "blade",
+        }
+
+        -- 2. Agregamos la detección de tipo de archivo (filetype) para Blade
+        -- Esto asegura que los archivos *.blade.php se reconozcan como 'blade'.
+        vim.filetype.add({
+            pattern = {
+                [".*%.blade%.php"] = "blade",
+            },
+        })
+
+        -- 2. Llamada a la función de setup con todas las opciones
+        require 'nvim-treesitter.configs'.setup(opts)
+    end
+
 }
