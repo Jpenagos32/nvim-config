@@ -17,5 +17,9 @@
         "prefix": "bprops",
         "body": "@props([ $1 ])",
         "description": "Crea la etiqueta necesaria para definir las props de un archivo de blade"
+    },
+    "Key value array": {
+        "prefix": "kv",
+        "body": "${1:key} => ${2:value},$3"
     }
 }
