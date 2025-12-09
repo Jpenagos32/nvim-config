@@ -1,0 +1,21 @@
+{
+    "Blade php code directive": {
+        "prefix": "bphp",
+        "body": [
+            "@php",
+            "\t $1",
+            "@endphp"
+        ],
+        "description": "Crea un fragmento de codigo dentro de un archivo blade"
+    },
+    "Blade echo shortcut": {
+        "prefix": "becho",
+        "body": "{{ $1 }}",
+        "description": "Crea el atajo para echo dentro de un archivo blade"
+    },
+    "Blade props definition": {
+        "prefix": "bprops",
+        "body": "@props([ $1 ])",
+        "description": "Crea la etiqueta necesaria para definir las props de un archivo de blade"
+    }
+}
