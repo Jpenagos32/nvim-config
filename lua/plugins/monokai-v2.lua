@@ -11,6 +11,12 @@ return {
     -- end,
     'tanvirtin/monokai.nvim',
     config = function()
-        vim.cmd('colorscheme monokai_pro')
+        vim.cmd('colorscheme monokai')
+        require('monokai').setup({
+            palette = {
+                base1 = "#272822",
+                base2 = "#272822",
+            }
+        })
     end
 }
