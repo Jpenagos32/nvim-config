@@ -4,7 +4,7 @@
         "body": "<?php \n$0"
     },
     "php con impresion": {
-        "prefix": "??",
+        "prefix": "phpecho",
         "body": "<?= $1 ?>"
     },
     "condicional Else": {
