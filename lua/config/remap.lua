@@ -59,7 +59,7 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", {
     silent = true
 })
 
-vim.keymap.set("n", "<leader>ba", ":bd<CR>", {
+vim.keymap.set("n", "<leader>ba", ":%bd<CR>", {
     desc = 'Elimina TODOS los buffers',
     noremap = true,
     silent = true
