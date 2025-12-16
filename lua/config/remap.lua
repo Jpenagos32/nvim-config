@@ -59,6 +59,12 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", {
     silent = true
 })
 
+vim.keymap.set("n", "<leader>ba", ":bd<CR>", {
+    desc = 'Elimina TODOS los buffers',
+    noremap = true,
+    silent = true
+})
+
 -- Terminal
 vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = 'Sale del modo terminal y vuelve al modo normal' })
 
