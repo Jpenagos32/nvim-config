@@ -12,3 +12,7 @@ vim.diagnostic.config({
     virtual_text = true
 })
 vim.opt.termguicolors = true -- opcion para el correcto funcionamiento de bufferline
+
+-- Plegado de codigo (folding)
+vim.opt.foldmethod = "indent"
+vim.opt.foldlevel = 99

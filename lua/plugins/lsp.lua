@@ -3,15 +3,15 @@ return {
     opts = {
         ensure_installed = {
             "lua_ls",
-            "phpactor",
-            -- "intelephense",
+            -- "phpactor",
+            "intelephense",
             "html",
             "ts_ls",
             "cssls",
             "css_variables",
             "jsonls",
             "emmet_language_server",
-            "laravel_ls"
+            -- "laravel_ls"
         },
         automatic_enable = true
     },

@@ -106,7 +106,7 @@
     },
     "Array key value": {
         "prefix": "kv",
-        "body": "'${1:key}' => ${2:$value}",
+        "body": "'${1:key}' => ${2:$value},",
         "description": "Generates $key => $value for assoc array"
     },
     "Creates a function": {
