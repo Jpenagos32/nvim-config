@@ -17,8 +17,8 @@ return {
             enabled = true,
             sources = {
                 explorer = {
-                    ignored = true,
-                    hidden = true, -- Muestra los archivos ocultos por defecto en el explorador
+                    ignored = false,
+                    hidden = false, -- Muestra los archivos ocultos por defecto en el explorador
                     layout = {
                         layout = {
                             position = "right" -- Posicion del explorador a la derecha
