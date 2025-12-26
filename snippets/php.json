@@ -1,7 +1,15 @@
 {
-    "etiquetas_php": {
+    "apertura php": {
         "prefix": "open",
         "body": "<?php \n$0"
+    },
+    "etiquetas php": {
+        "prefix": "phpopen",
+        "body": [
+            "<?php",
+            "\t$1",
+            "?>"
+        ]
     },
     "php con impresion": {
         "prefix": "phpecho",
