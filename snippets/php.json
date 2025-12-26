@@ -100,7 +100,7 @@
         "body": [
             "<?php foreach(\\$${1:data} as \\$${2:key} ${3:=>} ${4:\\$value}): ?>",
             "\t",
-            "<?php enforeach ?>"
+            "<?php endforeach ?>"
         ]
     },
     "inserta this": {
