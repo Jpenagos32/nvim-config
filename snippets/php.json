@@ -95,6 +95,14 @@
             "<?php endif?>"
         ]
     },
+    "Condicional para vistas": {
+        "prefix": "phpforeach",
+        "body": [
+            "<?php foreach(${1:\\$data} as ${2:\\$key} ${3:=>} ${4:\\$value}): ?>",
+            "\t",
+            "<?php enforeach ?>"
+        ]
+    },
     "inserta this": {
         "prefix": "this",
         "body": "\\$this->$0"
