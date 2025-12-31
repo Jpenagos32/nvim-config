@@ -36,7 +36,7 @@ vim.keymap.set("n", "<leader>wh", "<C-w>h", { desc = 'Cambia a la ventana izquie
 vim.keymap.set("n", "<leader>w_", "<C-w>_", { desc = 'Maximiza el alto de la ventana' })
 vim.keymap.set("n", "<leader>w|", "<C-w>|", { desc = 'Maximiza el ancho de la ventana' })
 vim.keymap.set("n", "<leader>w=", "<C-w>=", { desc = 'Iguala el tamaño de todas las ventanas' })
-vim.keymap.set("n", "<leader>t", ":botright 8sp|term<CR>", { desc = 'Abre una terminal en la parte inferior' })
+vim.keymap.set("n", "<leader>t", ":term<CR>i", { desc = 'Abre una terminal', silent = true })
 vim.keymap.set("n", "<leader>+", "2<C-w>+", { desc = 'Aumenta el tamaño de la ventana en split' })
 vim.keymap.set("n", "<leader>-", "2<C-w>-", { desc = 'Disminuye el tamaño de la ventana split' })
 
