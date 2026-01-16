@@ -26,6 +26,11 @@ keymap(
     { desc = 'Reemplaza la palabra bajo el cursor (usar flag /g para reemplazar toda la linea)' }
 )
 
+keymap("n", '<leader>gU', 'viwU', { desc = 'Convierte la palabra bajo el cursor a mayusculas', silent = true })
+keymap("n", '<leader>gu', 'viwu', { desc = 'Convierte la palabra bajo el cursor a minusculas', silent = true })
+keymap("n", '<leader>gt', 'viw~', { desc = 'Alterna entre mayusculas y minusculas', silent = true })
+keymap("n", '<leader>gp', 'bgUl', { desc = 'Pone la primera letra de la palabra en mayusculas', silent = true })
+
 -- Ventanas
 keymap("n", "<leader>ws", "<C-w>s", { desc = 'Divide la ventana horizontalmente' })
 keymap("n", "<leader>wv", "<C-w>v", { desc = 'Divide la ventana verticalmente' })

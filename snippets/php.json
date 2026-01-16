@@ -98,8 +98,8 @@
     "Condicional para vistas": {
         "prefix": "phpforeach",
         "body": [
-            "<?php foreach(\\$${1:data} as \\$${2:key} ${3:=>} ${4:\\$value}): ?>",
-            "\t",
+            "<?php foreach(\\$${1:data} as \\$${2:key}): ?>",
+            "\t$0",
             "<?php endforeach ?>"
         ]
     },
