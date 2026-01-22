@@ -31,6 +31,14 @@
             "echo \"</pre>\";"
         ]
     },
+    "Formato print_r": {
+        "prefix": "prep",
+        "body": [
+            "echo \"<pre>\";",
+            "print_r($0);",
+            "echo \"</pre>\";"
+        ]
+    },
     "salto de linea": {
         "prefix": "ebr",
         "body": "echo '<br/>';$0"
