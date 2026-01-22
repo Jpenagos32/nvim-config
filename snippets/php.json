@@ -140,5 +140,13 @@
             "\t$4",
             "}"
         ]
+    },
+    "condicional php": {
+        "prefix": "if",
+        "body": [
+            "if (${1:\\$condition}) {",
+            "\t//$0",
+            "}"
+        ]
     }
 }
