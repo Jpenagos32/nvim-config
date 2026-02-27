@@ -1,12 +1,13 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    lazy = false,
     dependencies = {
         'nvim-treesitter/nvim-treesitter-textobjects'
     },
     build = ":TSUpdate",
     event = 'VeryLazy',
     config = function()
-        local configs = require("nvim-treesitter.configs")
+        local configs = require("nvim-treesitter")
         configs.setup({
             -- A list of parser names, or "all" (the listed parsers MUST always be installed)
             ensure_installed = {
