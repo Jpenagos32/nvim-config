@@ -8,7 +8,7 @@ sudo apt install xclip
 ```
 ---
 
-- Formatters necesarios
+- Formatters necesarios (instalarlos desde el menu de :Mason)
 
     - `php-cs-fixer`
     - `blade-formatter` 
