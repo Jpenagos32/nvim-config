@@ -13,6 +13,8 @@ sudo apt install xclip
     - `php-cs-fixer`
     - `blade-formatter` 
 
+## Requisitos
+- Es necesario instalar NodeJs (el comando de instalación dependerá del sistema operativo)
 - Es necesario instalar `fd-find` para el correcto funcionamiento de `Snacks`
 
 ```bash
