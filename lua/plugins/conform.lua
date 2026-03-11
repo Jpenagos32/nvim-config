@@ -5,6 +5,7 @@ return {
             timeout_ms = 1000,
             lsp_format = "fallback",
         },
+        -- format_on_save = false,
 
         formatters_by_ft = {
             php = { 'php_cs_fixer' },

@@ -4,7 +4,7 @@ return {
     config = function()
         require('lualine').setup({
             options = {
-                theme = 'powerline_dark'
+                theme = 'monokai-v2'
             },
             sections = {
                 lualine_c = {
