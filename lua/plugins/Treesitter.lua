@@ -7,11 +7,12 @@ return {
     build = ":TSUpdate",
     event = 'VeryLazy',
     config = function()
-        local configs = require("nvim-treesitter")
+        local configs = require("nvim-treesitter.configs")
         configs.setup({
             -- A list of parser names, or "all" (the listed parsers MUST always be installed)
             ensure_installed = {
                 "php",
+                "php_only",
                 "phpdoc",
                 "html",
                 "javascript",
