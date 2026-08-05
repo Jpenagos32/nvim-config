@@ -8,8 +8,8 @@ return {
     event = 'VeryLazy',
     config = function()
         -- local configs = require("nvim-treesitter.configs")
-        local configs = require("nvim-treesitter") -- usar esta linea en caso de que alguna de las otras genere error
-        -- local configs = require("nvim-treesitter.config") -- usar esta linea en caso de que alguna de las otras genere error
+        -- local configs = require("nvim-treesitter") -- usar esta linea en caso de que alguna de las otras genere error
+        local configs = require("nvim-treesitter.config") -- usar esta linea en caso de que alguna de las otras genere error
         configs.setup({
             -- A list of parser names, or "all" (the listed parsers MUST always be installed)
             ensure_installed = {
