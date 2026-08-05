@@ -25,6 +25,20 @@ sudo apt install fd-find
     - telescope
     - indent_blankline.lua
 
+
+- Es necesario instalar tree-sitter-cli y gcc para el correcto funcionamiento de treesiter
+
+```
+# Arch Linux
+sudo pacman -S tree-sitter-cli gcc
+
+# Ubuntu
+sudo apt install tree-sitter-cli gcc
+
+# Tambien se puede instalar de forma global mediante npm 
+npm install -g tree-sitter-cli
+```
+
 ## Nota
 
 En caso de que aparezca el siguiente error
