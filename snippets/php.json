@@ -5,11 +5,7 @@
     },
     "etiquetas php": {
         "prefix": "phpopen",
-        "body": [
-            "<?php",
-            "\t$1",
-            "?>"
-        ]
+        "body": "<?php $1 ?>"
     },
     "php con impresion": {
         "prefix": "phpecho",
